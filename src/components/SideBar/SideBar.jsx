@@ -6,7 +6,7 @@ import Search from './helpers/Search/Search';
 import Rooms from './helpers/Rooms/Rooms';
 
 const SideBar = () => (
-  <div class="side-bar">
+  <div className="side-bar">
     <Header />
     <Search />
     <Rooms />
