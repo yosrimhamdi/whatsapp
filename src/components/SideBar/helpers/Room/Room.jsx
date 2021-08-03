@@ -7,7 +7,7 @@ const Room = ({ title, description }) => (
   <div className="room">
     <Avatar alt="room avatar" />
     <div className="room__details">
-      <h3>{title}</h3>
+      <h3 className="room__title">{title}</h3>
       <p>{description}</p>
     </div>
   </div>
