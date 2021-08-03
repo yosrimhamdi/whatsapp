@@ -3,12 +3,12 @@ import Avatar from '../../../common/Avatar';
 
 import './Room.sass';
 
-const Room = ({ title, description }) => (
+const Room = ({ title, lastMessage }) => (
   <div className="room">
     <Avatar alt="room avatar" />
     <div>
       <h3 className="room__title">{title}</h3>
-      <p>{description}</p>
+      <p>{lastMessage}</p>
     </div>
   </div>
 );
