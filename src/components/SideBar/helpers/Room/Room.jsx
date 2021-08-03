@@ -6,7 +6,7 @@ import './Room.sass';
 const Room = ({ title, description }) => (
   <div className="room">
     <Avatar alt="room avatar" />
-    <div className="room__details">
+    <div>
       <h3 className="room__title">{title}</h3>
       <p>{description}</p>
     </div>
