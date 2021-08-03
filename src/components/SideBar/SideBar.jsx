@@ -1,9 +1,9 @@
 import React from 'react';
 
 import './SideBar.sass';
-import Header from './helpers/Header/Header';
-import Search from './helpers/Search/Search';
-import Rooms from './helpers/Rooms/Rooms';
+import Header from './core/Header/Header';
+import Search from './core/Search/Search';
+import Rooms from './core/Rooms/Rooms';
 
 const SideBar = () => (
   <div className="side-bar">
