@@ -1,5 +1,5 @@
 import React from 'react';
-import Avatar from '../../../common/Avatar';
+import Avatar from '../../../shared/Avatar';
 
 import './Room.sass';
 
