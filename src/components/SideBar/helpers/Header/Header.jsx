@@ -5,15 +5,12 @@ import ChatIcon from '@material-ui/icons/Chat';
 import DonutLargeIcon from '@material-ui/icons/DonutLarge';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import IconButton from '@material-ui/core/IconButton';
+import Avatar from '../../../../common/Avatar';
 
 export const Header = () => {
   return (
     <div className="header">
-      <img
-        src="//via.placeholder.com/150x150"
-        className="header__user-image"
-        alt="user iamge"
-      />
+      <Avatar alt="user image" />
       <div className="header__icon-container">
         <IconButton>
           <DonutLargeIcon />
