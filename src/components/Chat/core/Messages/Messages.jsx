@@ -14,7 +14,7 @@ export const Messages = () => (
       userName="yosri mhamdi"
       content="hey guys"
       date="Fri, 04 Sep 2020 18:00:16 GMT"
-      mine
+      sender
     />
     <Message
       userName="yosri mhamdi"

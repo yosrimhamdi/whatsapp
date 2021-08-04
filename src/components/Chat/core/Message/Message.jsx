@@ -3,9 +3,9 @@ import classnames from 'classnames';
 
 import './Message.sass';
 
-const Message = ({ userName, content, date, mine }) => {
+const Message = ({ userName, content, date, sender }) => {
   const className = classnames({
-    'message--mine': mine,
+    'message--sender': sender,
     'message': true,
   });
 
