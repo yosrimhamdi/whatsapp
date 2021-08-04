@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles.sass';
+import './Header.sass';
 import Avatar from '../../../shared/Avatar';
 import SearchIcon from '@material-ui/icons/Search';
 import AttachFileIcon from '@material-ui/icons/AttachFile';
