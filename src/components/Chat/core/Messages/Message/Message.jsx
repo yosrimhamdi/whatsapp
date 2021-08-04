@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import './Messsage.sass';
+import './Message.sass';
 
 const Message = ({ userName, content, date, mine }) => {
   const className = classnames({
