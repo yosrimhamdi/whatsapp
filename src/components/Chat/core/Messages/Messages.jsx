@@ -21,6 +21,26 @@ export const Messages = () => (
       content="this is great man"
       date="Fri, 04 Sep 2020 18:00:16 GMT"
     />
+    <Message
+      userName="yosri mhamdi"
+      content="this is great man"
+      date="Fri, 04 Sep 2020 18:00:16 GMT"
+    />
+    <Message
+      userName="yosri mhamdi"
+      content="this is great man"
+      date="Fri, 04 Sep 2020 18:00:16 GMT"
+    />
+    <Message
+      userName="yosri mhamdi"
+      content="this is great man"
+      date="Fri, 04 Sep 2020 18:00:16 GMT"
+    />
+    <Message
+      userName="yosri mhamdi"
+      content="this is great man"
+      date="Fri, 04 Sep 2020 18:00:16 GMT"
+    />
   </div>
 );
 
