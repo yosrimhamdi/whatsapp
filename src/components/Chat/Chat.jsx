@@ -8,6 +8,7 @@ const Chat = () => (
   <div className="chat">
     <Header />
     <Messages />
+    <div>hi</div>
   </div>
 );
 

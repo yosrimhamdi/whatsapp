@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Messages.sass';
-import Message from './Message/Message';
+import Message from '../Message/Message';
 
 export const Messages = () => (
   <div className="messages">
