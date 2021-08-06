@@ -13,9 +13,9 @@ const Input = () => {
     setValue(e.target.value);
   };
 
-  const onInputKeyPress = e => {
+  const onInputKeyPress = async e => {
     if (e.charCode === 13) {
-      axios.post('http://localhost:3001/api/v1/messages', {
+      await axios.post('http://localhost:3001/api/v1/messages', {
         content: value,
       });
 
