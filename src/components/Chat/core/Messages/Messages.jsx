@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import messagesApi from '../../../../api/messages';
 import Pusher from 'pusher-js';
+
+import messagesApi from '../../../../api/messages';
 
 import './Messages.sass';
 import Message from '../Message/Message';
