@@ -23,7 +23,7 @@ export const Messages = () => {
       channel.unbind_all();
       channel.unsubscribe();
     };
-  }, []);
+  }, [messages]);
 
   useEffect(() => {
     (async () => {
