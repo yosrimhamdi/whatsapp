@@ -9,8 +9,6 @@ export const Messages = () => {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    Pusher.logToConsole = true;
-
     const pusher = new Pusher('8017a44ac3256ec6cd6d', {
       cluster: 'eu',
     });
@@ -18,8 +16,13 @@ export const Messages = () => {
     const channel = pusher.subscribe('messages');
 
     channel.bind('inserted', message => {
-      setMessages([message, ...messages]);
+      setMessages([...messages, message]);
     });
+
+    return () => {
+      channel.unbind_all();
+      channel.unsubscribe();
+    };
   }, []);
 
   useEffect(() => {
