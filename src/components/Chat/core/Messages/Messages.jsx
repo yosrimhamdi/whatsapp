@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import messagesApi from '../../../../api/messages';
 import Pusher from 'pusher-js';
 
 import './Messages.sass';
@@ -27,7 +27,7 @@ export const Messages = () => {
 
   useEffect(() => {
     (async () => {
-      const response = await axios.get('http://localhost:3001/api/v1/messages');
+      const response = await messagesApi.get('/');
 
       setMessages(response.data.messages);
     })();

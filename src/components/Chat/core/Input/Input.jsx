@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 import './Input.sass';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import MicIcon from '@material-ui/icons/Mic';
 import { IconButton } from '@material-ui/core';
+import messages from '../../../../api/messages';
 
 const Input = () => {
   const [value, setValue] = useState('');
@@ -15,9 +15,7 @@ const Input = () => {
 
   const onInputKeyPress = async e => {
     if (e.charCode === 13) {
-      await axios.post('http://localhost:3001/api/v1/messages', {
-        content: value,
-      });
+      await messages.post('/', { content: value });
 
       setValue('');
     }
